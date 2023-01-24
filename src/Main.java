@@ -1,3 +1,4 @@
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -29,6 +30,24 @@ public class Main {
         mentoria.setDescricao("Descrição de JAVA");
         mentoria.setData(LocalDate.now());
 
+        Mentoria mentoria1 = new Mentoria();
+        mentoria1.setTitulo("Mentoria de JAVA");
+        mentoria1.setDescricao("Descrição de JAVA");
+        mentoria1.setData(LocalDate.now());
+
+        Conteudo conteudo = new Curso();  //Aqui é um exemplo de Polimorfismo
+        Conteudo conteudo1 = new Mentoria(); //Aqui é um exemplo de Polimorfismo
+
+
+        Mentoria mentoria2 = new Mentoria();
+        mentoria2.setTitulo("Mentoria de JAVA");
+        mentoria2.setDescricao("Descrição de JAVA");
+        mentoria2.setData(LocalDate.now());
+
+
+
         System.out.println(mentoria);
+        System.out.println(mentoria1);
+        System.out.println(mentoria2);
     }
 }
