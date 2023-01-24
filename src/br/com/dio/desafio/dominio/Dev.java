@@ -14,7 +14,7 @@ public class Dev {
     //Foi esco lhido elemento Set pois ele só eprmite elementos únicos, no exemplo, o dev não consegue se inscrever no mesmo curso duas vezes, então não faz sentido permitir issso no moemnto da inclusão
 
     public void inscreverBootcamp (Bootcamp bootcamp){
-        this.conteudosInscritos.addAll(getConteudosInscritos());
+        this.conteudosInscritos.addAll(bootcamp.getConteudos());
         bootcamp.getDevsInscritos().add(this);
         //To pegando o meu Set de conteúdos inscritos e vou adicionando dentro dele,
         //todos os conteudos do bootcamp
